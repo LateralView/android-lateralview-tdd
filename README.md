@@ -11,7 +11,8 @@ Sample app with basic settings to start developing an app with unit test include
 	4.1. Assign a name to the configuration (Use a self explanatory name for each test file. eg. MainActivityTest)
 	4.2. Choose app as module.
 	4.3. Select MainActivityTest as test class.
-	4.4. Click on Apply then OK.
+	4.4. Add $MODULE_DIR$ as working directory, otherwise Robolectric will through an error (Only for mac users).
+	4.5. Click on Apply then OK.
 5. Run the configuration that you've just created.
 
 There is also a Test for the EmailValidator utils file. To run the test follow the same procedure as before, but select EmailValidatorTest class.

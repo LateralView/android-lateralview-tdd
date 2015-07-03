@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="EditText">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EditText.HasNext">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="EditText.Done">
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+</resources>

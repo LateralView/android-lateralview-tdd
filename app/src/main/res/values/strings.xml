@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sign_up_name_error">Invalid Name</string>
+    <string name="sign_up_email_error">Invalid Email</string>
+    <string name="sign_up_password_error">Invalid password</string>
+</resources>

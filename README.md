@@ -23,6 +23,8 @@ The main idea behind this repo is to set a clean start for every user that inten
 
 Feel free to contribute and add additional test cases that were not included here.
 
+I've also written a [medium post](https://medium.com/p/f5f1900bc5cc) explaining a bit the importance of testing an app. Please visit if you have some spare time :)
+
 # TODO
 
 Some additional test cases can involve networking, Location APIs and layout tests for example.

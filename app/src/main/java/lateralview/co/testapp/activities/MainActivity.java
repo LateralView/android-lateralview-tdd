@@ -11,9 +11,13 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import javax.inject.Inject;
+
 import lateralview.co.testapp.R;
+import lateralview.co.testapp.common.AndroidTDDApplication;
 import lateralview.co.testapp.common.Constants;
 import lateralview.co.testapp.utils.EmailValidator;
+import lateralview.co.testapp.utils.NetworkApi;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,11 +27,17 @@ public class MainActivity extends AppCompatActivity {
     private Button _btnDone;
     private Switch _swFlowSelector;
 
+    @Inject NetworkApi networkApi;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initializeControls();
+
+        ((AndroidTDDApplication) getApplication()).getComponent().inject(this);
+
+        boolean injected =  networkApi == null ? false : true;
     }
 
     private void initializeControls(){

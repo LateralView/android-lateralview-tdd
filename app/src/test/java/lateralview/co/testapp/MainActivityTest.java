@@ -1,9 +1,5 @@
 package lateralview.co.testapp;
 
-
-/**
- * Created by Joaquin on 3/7/15.
- */
 import android.content.Context;
 import android.content.Intent;
 import android.widget.Button;
@@ -33,7 +29,7 @@ import static org.robolectric.Shadows.shadowOf;
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
  */
 @RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class,emulateSdk = 21)
+@Config(constants = BuildConfig.class, sdk = 21)
 public class MainActivityTest{
     @Mock
     Context mMockContext;

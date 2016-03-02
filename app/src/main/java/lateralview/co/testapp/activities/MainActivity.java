@@ -17,7 +17,6 @@ import lateralview.co.testapp.R;
 import lateralview.co.testapp.common.AndroidTDDApplication;
 import lateralview.co.testapp.common.Constants;
 import lateralview.co.testapp.utils.EmailValidator;
-import lateralview.co.testapp.utils.NetworkApi;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private Button _btnDone;
     private Switch _swFlowSelector;
 
-    @Inject NetworkApi networkApi;
+    @Inject EmailValidator mEmailValidator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
         initializeControls();
 
         ((AndroidTDDApplication) getApplication()).getComponent().inject(this);
-
-        boolean injected =  networkApi == null ? false : true;
     }
 
     private void initializeControls(){
@@ -88,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
 
-        if (_etEmail.getText() == null || !EmailValidator.isValidEmail(_etEmail.getText())) {
+        if (_etEmail.getText() == null || !mEmailValidator.isValidEmail(_etEmail.getText())) {
             Toast.makeText(this, getString(R.string.sign_up_email_error), Toast.LENGTH_SHORT).show();
             return false;
         }

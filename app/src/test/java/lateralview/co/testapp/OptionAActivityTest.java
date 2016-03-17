@@ -23,9 +23,6 @@ import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLog;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
-
-
 import lateralview.co.testapp.application.TestApplication;
 import lateralview.co.testapp.model.Entry;
 import okhttp3.HttpUrl;
@@ -39,7 +36,7 @@ import static org.junit.Assert.assertEquals;
  *
  */
 @RunWith(RobolectricGradleTestRunner.class)
-@Config(application = TestApplication.class,constants = BuildConfig.class,emulateSdk = 21)
+@Config(application = TestApplication.class,constants = BuildConfig.class,sdk = 21)
 public class OptionAActivityTest {
     @Mock
     Context mMockContext;

@@ -10,4 +10,8 @@ public class Constants {
     public static final String REGEX_EMAIL = "[a-z0-9._-]+@[a-z0-9.-]+\\.[a-z]{2,4}";
     public static final String REGEX_NUMBERS = "^[0-9]+";
     public static final String REGEX_CHARS_NUMBERS = "^[a-zA-Z0-9]+";
+
+    //Network
+    public static final String SERVER_URL = "http://jsonplaceholder.typicode.com";
+    public static final String GET_USER_INFORMATION = SERVER_URL+"/posts/1";
 }

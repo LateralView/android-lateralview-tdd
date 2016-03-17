@@ -4,13 +4,7 @@ import android.test.suitebuilder.annotation.SmallTest;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.robolectric.Robolectric;
 
-import javax.inject.Inject;
-
-import lateralview.co.testapp.activities.MainActivity;
-import lateralview.co.testapp.common.AndroidTDDApplication;
-import lateralview.co.testapp.components.DaggerDiComponent;
 import lateralview.co.testapp.utils.EmailValidator;
 
 import static org.junit.Assert.assertFalse;

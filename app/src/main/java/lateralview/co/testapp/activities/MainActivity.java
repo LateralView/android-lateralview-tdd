@@ -14,7 +14,7 @@ import android.widget.Toast;
 import javax.inject.Inject;
 
 import lateralview.co.testapp.R;
-import lateralview.co.testapp.common.AndroidTDDApplication;
+import lateralview.co.testapp.application.AndroidTDDApplication;
 import lateralview.co.testapp.common.Constants;
 import lateralview.co.testapp.utils.EmailValidator;
 
